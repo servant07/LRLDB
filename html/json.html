@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function CharClass()
+	{
+		this.number = 0
+		this.imgsrc = "";
+		this.name = ""
+		this.type = ""
+		this.grade = ""
+		this.tag = new Array("","","");
+		this.LV=0;
+		this.hp = 0;
+		this.att = 0;
+		this.def = 0;
+		this.cri = 0;
+		this.hit = 0;
+		this.ap = 0;
+		this.eva = 0;	//회피
+		this.grwhp = 0;
+		this.grwatt = 0;
+		this.grwdef = 0;
+		this.inchp = 0;
+		this.incatt = 0;
+		this.incdef = 0;
+		this.inccri = 0;
+		this.inchit = 0;
+		this.inceva = 0;
+		this.core=0;
+		this.equip = new Array("","","");
+	}
+var chararray = new Array;
+
+for(var i=0;i<124;i++)
+{
+	chararray[i] = new CharClass();
+	chararray[i].number = i;
+}
+
+	
+	var obj = JSON.stringify(chararray, null, "\t");
+	var dataUri = "data:application/json;charset=utf-8,"+ encodeURIComponent(obj_s);
+    var link = $("#link").attr("href", dataUri);
+
+	
+</script>
+ <a href="#" id="link" download="sample.json">download</a>
+</body>
+</html>

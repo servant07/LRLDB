@@ -1,0 +1,13 @@
+img
+		{
+			display:block;
+			float:left;
+		}
+		#mainbox{ 
+			max-width: 829px;	
+		}
+		@media (max-width: 829px){
+			img.character{
+			width : 16.6%;	
+			}
+		}

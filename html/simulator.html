@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LastOrigin DB</title>
+	<style type="text/css">
+		table{
+			border : 2px solid black;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		td,tr{
+			border : 2px solid black;
+			height: 187px;
+			width: 187px;
+		}
+
+		div.card{
+
+		}
+
+	</style>
+	<script type="text/javascript">
+		
+		function initBaseArray(array)
+		{
+			
+			for(var i=0;i<9;i++)
+			{
+				var temp = new CardClass(0,"1","1","1");
+				temp.src = "'image/default.png'";
+				array[i] = temp;
+			}
+		}
+		var basearray = new Array();
+		initBaseArray(basearray);
+
+
+
+</script>
+</head>
+<body>
+<h1>라스트 오리진 DB</h1><a href="main.html">캐릭터 목록</a>   <a href="simulator.html">세팅 시뮬레이터</a>
+<hr>
+<table>
+	<tr>
+		<td><div id = "base1"></div></td>
+		<td><div id = "base2"></div></td>
+		<td><div id = "base3"></div></td>
+	</tr>
+	<tr>
+		<td><div id = "base4"></div></td>
+		<td><div id = "base5"></div></td>
+		<td><div id = "base6"></div></td>
+	</tr>
+	<tr>
+		<td><div id = "base7"></div></td>
+		<td><div id = "base8"></div></td>
+		<td><div id = "base9"></div></td>
+	</tr>
+	<script type="text/javascript">
+		function ImgSeting(array)
+		{		
+
+			for(var i=0;i<9;i++){			
+				var j=i+1;
+				var div = document.getElementById("base"+j);
+				div.innerHTML = "<img src ='"+array[i].src+"'>" 
+			}
+		}
+			
+		ImgSeting(basearray);
+		alert(document.getElementById("base1"));
+		basearray[3].src='image/LO3.png';
+		ImgSeting(basearray);
+
+	</script>
+
+</table>
+<br>
+<table class = "main">
+<tr class = "main">
+	<td class = "main"></td>
+	<td class = "main"></td>
+	<td class = "main"></td>
+	<td class = "main"></td>
+	<td class = "main"></td>
+</tr>
+</table>
+</body>
+
+</html>
