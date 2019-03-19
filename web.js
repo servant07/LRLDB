@@ -6,8 +6,8 @@ var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'nodejs-004.cafe24.com',
   user     : 'die1587',
-  password : '828282',
-  database : 'lastorigin'
+  password : 'lrldb765',
+  database : 'die1587'
 });
 connection.connect();
 
