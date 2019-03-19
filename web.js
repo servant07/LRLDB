@@ -1,12 +1,12 @@
 var express = require('express');
+var app = express();
 var bodyparser = require('body-parser');	//post방식의 데이터를 인코딩하기 위한 모듈
- 
 var async = require('async');
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'nodejs-004.cafe24.com',
   user     : 'die1587',
-  password : 'lrldb765',
+  password : '828282',
   database : 'lastorigin'
 });
 connection.connect();
