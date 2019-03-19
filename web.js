@@ -46,7 +46,7 @@ app.post('/search',async(rep, res)=>{
 		x = await search(rep.body.input); 
 		res.send( mainTemp(searchTemp(charlist(x))));
 })
-app.listen(80);
+app.listen(8001);
 
 function mainTemp(body)
 {
