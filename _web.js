@@ -1,11 +1,11 @@
 var express = require('express');
-var bodyparser = require('body-parser');	//post방식의 데이터를 인코딩하기 위한 모듈
 var app = express();
+var bodyparser = require('body-parser');	//post방식의 데이터를 인코딩하기 위한 모듈
 var async = require('async');
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
+  host     : 'nodejs-004.cafe24.com',
+  user     : 'die1587',
   password : '828282',
   database : 'lastorigin'
 });
@@ -113,7 +113,7 @@ function charlist(index)
 
 	for(var i in index){
 
-			tag = tag+ "<a href = '/character?id=" +index[i]+ "'><img class = 'character' src='LO"+index[i]+".png'></a>\n";
+			tag = tag+ "<a href = '/character?id=" +index[i]+ "'><img class = 'character' src='image/LO"+index[i]+".png'></a>\n";
 		}
 
 	return tag;
