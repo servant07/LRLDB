@@ -23,7 +23,7 @@ const dbqurey = (qurey)=>{
 
 
 app.use(express.static('css'));
-app.use(express.static('image'));
+app.use('/img', express.static('image'));
 app.use(express.static('js'));
 app.use(express.static('html'));
 app.use(bodyparser.urlencoded({exrended:false}))
@@ -41,6 +41,7 @@ app.get('/character',async(rep, res)=>{
 	res.send( mainTemp("미안 아직 데이터를 다 못 넣었어."));
 
 })
+
 app.post('/search',async(rep, res)=>{
 		var x = new Array();
 		x = await search(rep.body.input); 
@@ -113,7 +114,7 @@ function charlist(index)
 
 	for(var i in index){
 
-			tag = tag+ "<a href = '/character?id=" +index[i]+ "'><img class = 'character' src='image/LO"+index[i]+".png'></a>\n";
+			tag = tag+ "<a href = '/character?id=" +index[i]+ "'><img class = 'character' src='/img/LO"+index[i]+".png'></a>\n";
 		}
 
 	return tag;
