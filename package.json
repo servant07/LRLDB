@@ -26,14 +26,7 @@
       "resolved": "https://registry.npmjs.org/asap/-/asap-2.0.6.tgz",
       "version": "2.0.6"
     },
-    "async": {
-      "integrity": "sha512-H1qVYh1MYhEEFLsP97cVKqCGo7KfCyTt6uEWqsTBr9SO84oK9Uwbyd/yCW+6rKJLHksBNUVWZDAjfS+Ccx0Bbg==",
-      "requires": {
-        "lodash": "^4.17.11"
-      },
-      "resolved": "https://registry.npmjs.org/async/-/async-2.6.2.tgz",
-      "version": "2.6.2"
-    },
+    "async": "^2.6.2",
     "babel-runtime": {
       "integrity": "sha1-llxwWGaOgrVde/4E/yM3vItWR/4=",
       "requires": {
