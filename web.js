@@ -114,7 +114,7 @@ function charlist(index)
 
 	for(var i in index){
 
-			tag = tag+ "<a href = '/character?id=" +index[i]+ "'><img class = 'character' src='/img/LO"+index[i]+".png'></a>\n";
+			tag = tag+ "<a href = '/character?id=" +index[i]+ "'><img class = 'character' src='static/img/LO"+index[i]+".png'></a>\n";
 		}
 
 	return tag;
